@@ -10,7 +10,8 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  base: "/astroglobal-psychic-portal/",
+  // Base path for custom domain (root domain = "/")
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
