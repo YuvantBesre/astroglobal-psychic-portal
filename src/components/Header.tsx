@@ -1,14 +1,16 @@
-import { Star } from 'lucide-react';
+import logo from '@/assets/Logo.png';
 
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo Placeholder */}
+        {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-gold-light flex items-center justify-center shadow-gold">
-            <Star className="w-5 h-5 text-primary-foreground" fill="currentColor" />
-          </div>
+          <img 
+            src={logo} 
+            alt="Astroglobal Logo" 
+            className="h-10 w-auto object-contain"
+          />
           <span className="font-display text-xl font-semibold text-card-foreground">
             Astroglobal
           </span>

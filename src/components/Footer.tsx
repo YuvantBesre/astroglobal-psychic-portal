@@ -1,4 +1,5 @@
 import { Star, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
+import logo from '@/assets/Logo.png';
 
 const Footer = () => {
   return (
@@ -8,37 +9,36 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             {/* Brand */}
             <div className="md:col-span-2">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-gold-light flex items-center justify-center shadow-gold">
-                  <Star className="w-5 h-5 text-primary-foreground" fill="currentColor" />
-                </div>
-                <span className="font-display text-xl font-semibold text-card-foreground">
-                  Astroglobal
-                </span>
+              <div className="flex items-center gap-3 w-[250px] bg-white mb-4">
+                <img
+                  src={logo}
+                  alt="Astroglobal Logo"
+                  className="object-contain"
+                />
               </div>
               <p className="text-muted-foreground text-sm mb-6 max-w-sm">
-                World's first psychometric astrology app. Combining ancient celestial wisdom 
+                World's first psychometric astrology app. Combining ancient celestial wisdom
                 with modern psychological science to illuminate your cosmic path.
               </p>
-              
+
               {/* Social Links */}
               <div className="flex items-center gap-4">
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                   aria-label="Twitter"
                 >
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                   aria-label="Facebook"
                 >
@@ -76,8 +76,8 @@ const Footer = () => {
               <h4 className="font-display text-lg font-semibold text-card-foreground mb-4">
                 Support
               </h4>
-              <a 
-                href="mailto:support@astroglobal.com" 
+              <a
+                href="mailto:support@astroglobal.com"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4" />
@@ -93,7 +93,7 @@ const Footer = () => {
                 © {new Date().getFullYear()} Astroglobal. All rights reserved.
               </p>
               <div className="flex items-center gap-6">
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </a>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
