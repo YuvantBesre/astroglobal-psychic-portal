@@ -1,5 +1,6 @@
 import { Star, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
 import logo from '@/assets/Logo.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -93,9 +94,9 @@ const Footer = () => {
                 © {new Date().getFullYear()} Astroglobal. All rights reserved.
               </p>
               <div className="flex items-center gap-6">
-                <a href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
                 </a>
